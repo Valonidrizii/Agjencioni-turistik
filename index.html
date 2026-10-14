@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyWay Travel | Aranzhime & Bileta</title>
+    <meta
+      name="description"
+      content="Agjenci turistike me avio dhe bus bileta, aranzhime per ne Turqi, Greqi dhe Kroaci."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">✈</span>
+          <span>SkyWay Travel</span>
+        </div>
+        <nav class="menu" aria-label="Menu kryesor">
+          <a href="#home">Ballina</a>
+          <a href="#destinations">Destinacione</a>
+          <a href="flights.html">Fluturime</a>
+          <a href="turkey-hotels.html">Hotele</a>
+          <a href="#offers">Oferta</a>
+          <a href="#about">Pse ne</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+        <a class="btn btn-primary nav-cta" href="#contact">Rezervo tani</a>
+        <button class="nav-toggle" aria-label="Hap menun" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Udhetim pa stres</p>
+            <h1>Avio & bus bileta me oferta të mira për Turqinë, Greqinë dhe Kroacinë</h1>
+            <p class="subtitle">
+              Zgjidh paketën e duhur, rezervoni bileten tuaj dhe shijoni pushime te paharrueshme
+              me agjencinë tonë të specializuar në udhëtime të shpejta dhe të sigurta.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#offers">Shiko ofertat</a>
+              <a class="btn btn-secondary" href="#destinations">Zgjidh destinacionin</a>
+            </div>
+            <div class="hero-highlights">
+              <div><span>✓</span> Fluturime direkte</div>
+              <div><span>✓</span> Hotele me vlerësim të lartë</div>
+              <div><span>✓</span> Çmime transparente</div>
+            </div>
+            <ul class="stats">
+              <li><strong>2500+</strong><span>Klientë</span></li>
+              <li><strong>48h</strong><span>Rezervim i shpejtë</span></li>
+              <li><strong>4.9/5</strong><span>Vlerësim</span></li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <div class="search-shell">
+              <div class="search-header">
+                <span class="search-tab active">Fluturime</span>
+                <span class="search-tab">Hotele</span>
+                <span class="search-tab">Paketa</span>
+              </div>
+              <div class="search-grid">
+                <label>
+                  <span>From</span>
+                  <input type="text" value="Prishtinë" name="from" />
+                </label>
+                <label>
+                  <span>To</span>
+                  <input type="text" value="Antalya" name="to" />
+                </label>
+                <label>
+                  <span>Dates</span>
+                  <input type="text" value="15-19 Sep" name="dates" />
+                </label>
+                <label>
+                  <span>Travelers</span>
+                  <input type="text" value="2 adults" name="travelers" />
+                </label>
+              </div>
+              <div class="search-footer-row">
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked />
+                  <span>Vetëm oferta me çmim të ulët</span>
+                </label>
+                <button class="btn btn-primary full-width search-btn">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip">
+        <div class="container strip-grid">
+          <div>✈ Avio bileta</div>
+          <div>🚌 Bus bileta</div>
+          <div>🏨 Aranzhime hoteli</div>
+          <div>🧳 Paketa turistike</div>
+        </div>
+      </section>
+
+      <section id="destinations" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Destinacionet më të kërkuara</p>
+            <h2>Zgjedhja juaj për pushim të paharrueshëm</h2>
+          </div>
+          <div class="destination-grid">
+            <article class="destination-card turkey">
+              <div class="card-badge">Top oferta</div>
+              <h3>Turqi</h3>
+              <p>Stamboll, Antalya, Bodrum dhe plazhe me diell të pafund.</p>
+              <ul>
+                <li>Avio bileta</li>
+                <li>Transfer</li>
+                <li>Hoteli me mëngjes</li>
+              </ul>
+              <a href="turkey-hotels.html">Mëso më shumë</a>
+            </article>
+
+            <article class="destination-card greece">
+              <div class="card-badge">Pushime familjare</div>
+              <h3>Greqi</h3>
+              <p>Hotele bregdetare, mysafirije dhe vende historike me këndësi.</p>
+              <ul>
+                <li>Bus & avion</li>
+                <li>Udhëtim i lehtë</li>
+                <li>Oferta 3+4 netësh</li>
+              </ul>
+              <a href="greece-hotels.html">Mëso më shumë</a>
+            </article>
+
+            <article class="destination-card croatia">
+              <div class="card-badge">Më e kërkuara</div>
+              <h3>Kroaci</h3>
+              <p>Qe te deti, qytete të bukura, vlera dhe eksperienca unike.</p>
+              <ul>
+                <li>Aranzhime të sigurta</li>
+                <li>Rezervim i shpejtë</li>
+                <li>Udhëtime me grup</li>
+              </ul>
+              <a href="croatia-hotels.html">Mëso më shumë</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="offers" class="section alt-bg">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Oferta speciale</p>
+            <h2>Aranzhime për çdo stil udhëtimi</h2>
+          </div>
+          <div class="offers-grid">
+            <div class="offer-card">
+              <span class="offer-icon">✈️</span>
+              <h3>Avio bileta</h3>
+              <p>Fluturime direkte dhe me lidhje me destinacione të ndara nga agjencisë.</p>
+              <div class="offer-meta"><strong>Prej €99</strong><span>në 1 drejtim</span></div>
+            </div>
+            <div class="offer-card">
+              <span class="offer-icon">🚌</span>
+              <h3>Bus bileta</h3>
+              <p>Udhëtime komode dhe të sigurtë për destinacione të ndryshme evropiane.</p>
+              <div class="offer-meta"><strong>Prej €29</strong><span>në 1 drejtim</span></div>
+            </div>
+            <div class="offer-card">
+              <span class="offer-icon">🏖️</span>
+              <h3>Paketë pushimi</h3>
+              <p>Pakete me hotel, transfer dhe ushqim, të dizajnuara sipas budgetit tuaj.</p>
+              <div class="offer-meta"><strong>Prej €199</strong><span>për 3 netë</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing">
+        <div class="container">
+          <div class="section-head center">
+            <p class="eyebrow">Çmime</p>
+            <h2>Oferta e përshtatur sipas stileve të udhëtimit</h2>
+          </div>
+          <div class="pricing-grid">
+            <div class="price-card">
+              <p class="plan">Economy</p>
+              <h3>€129</h3>
+              <ul>
+                <li>Avio bileta</li>
+                <li>Hotel 3★</li>
+                <li>Transfer minimal</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Zgjidh</a>
+            </div>
+            <div class="price-card featured">
+              <p class="plan">Comfort</p>
+              <h3>€249</h3>
+              <ul>
+                <li>Avio + bus</li>
+                <li>Hotel 4★</li>
+                <li>Transfer + breakfast</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Zgjidh</a>
+            </div>
+            <div class="price-card">
+              <p class="plan">Premium</p>
+              <h3>€399</h3>
+              <ul>
+                <li>Udhëtim VIP</li>
+                <li>Hotel 5★</li>
+                <li>Transfer + aktivitete</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Zgjidh</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container reasons-grid">
+          <div class="reasons-copy">
+            <p class="eyebrow">Pse zgjedhin ne</p>
+            <h2>Shërbim profesional me qasje të personalizuar</h2>
+            <p>
+              Me eksperiencë të gjerë në sektorin e udhëtimeve, ofrojmë plane të përshtatura
+              sipas nevojave tuaja, me çmime konkurruese dhe mbështetje të vazhdueshme.
+            </p>
+            <div class="check-list">
+              <div><span>✓</span> Konsultim pa pagesë</div>
+              <div><span>✓</span> Oferta 100% të verifikuara</div>
+              <div><span>✓</span> Çmimet më të mira</div>
+              <div><span>✓</span> Mbështetje gjatë udhëtimit</div>
+            </div>
+          </div>
+          <div class="rating-box">
+            <div class="rating-top">
+              <div class="avatar">5.0</div>
+              <div>
+                <strong>Klientë të kënaqur</strong>
+                <p>Me vlerësim të lartë</p>
+              </div>
+            </div>
+            <div class="mini-stats">
+              <div>
+                <strong>12+</strong>
+                <span>Vite eksperiencë</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>Siguri rezervimi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg testimonials">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Çfarë thonë klientët</p>
+            <h2>Vlerësime nga udhëtarët tanë</h2>
+          </div>
+          <div class="testimonial-grid">
+            <div class="quote-card">
+              <p>
+                “Udhëtimi në Turqi ishte perfekt. Bileta dhe hoteli u organizuan në mënyrë të shkëlqyer.”
+              </p>
+              <div class="person">— Arben, Prishtinë</div>
+            </div>
+            <div class="quote-card">
+              <p>
+                “Greqia ishte një eksperiencë e paharrueshme falë ofertës që na ofruan.”
+              </p>
+              <div class="person">— Elona, Ferizaj</div>
+            </div>
+            <div class="quote-card">
+              <p>
+                “Shërbimi ishte profesional dhe i shpejtë, veçanërisht për rezervimin e autobuzit.”
+              </p>
+              <div class="person">— Dardan, Gjilan</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section routes-showcase">
+        <div class="container">
+          <div class="section-head center">
+            <p class="eyebrow">Rrugët e preferuara</p>
+            <h2>Udhëtime të planifikuara për çdo lloj pushimi</h2>
+          </div>
+          <div class="route-banner-grid">
+            <div class="route-banner istanbul">
+              <span>Stamboll</span>
+              <small>3 netë • 4 ditë</small>
+            </div>
+            <div class="route-banner athens">
+              <span>Athinë</span>
+              <small>4 netë • 5 ditë</small>
+            </div>
+            <div class="route-banner split">
+              <span>Split</span>
+              <small>5 netë • 6 ditë</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="flights" class="section alt-bg">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Shembuj fluturimesh</p>
+            <h2>Avio bileta nga Prishtina drejt destinacioneve të njohura</h2>
+          </div>
+          <div class="flight-table-wrap">
+            <table class="flight-table">
+              <thead>
+                <tr>
+                  <th>Rruga</th>
+                  <th>Destinacion</th>
+                  <th>Shkalla</th>
+                  <th>Çmimi shembull</th>
+                  <th>Operator</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>PRN → AYT</td>
+                  <td>Antalya, Turqi</td>
+                  <td>Direkt / sezonale</td>
+                  <td>€39 – €89</td>
+                  <td>Wizz Air</td>
+                </tr>
+                <tr>
+                  <td>PRN → ATH</td>
+                  <td>Athinë, Greqi</td>
+                  <td>Direkt</td>
+                  <td>€49 – €99</td>
+                  <td>Wizz Air</td>
+                </tr>
+                <tr>
+                  <td>PRN → SPU</td>
+                  <td>Split, Kroaci</td>
+                  <td>Direkt / sezonale</td>
+                  <td>€59 – €129</td>
+                  <td>Wizz Air</td>
+                </tr>
+                <tr>
+                  <td>PRN → IST</td>
+                  <td>Istanbul, Turqi</td>
+                  <td>Direkt</td>
+                  <td>€35 – €79</td>
+                  <td>Wizz Air</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">* Çmimet janë shembull dhe varen nga data, disponibiliteti dhe periudha e rezervimit. Në agjencinë tonë, ne gjejmë opsione më të mira sipas datave tuaja.</p>
+        </div>
+      </section>
+
+      <section id="hotels" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Hotele</p>
+            <h2>Opsione hotelierike në Turqi, Greqi dhe Kroaci</h2>
+          </div>
+          <div class="hotel-grid">
+            <article class="hotel-card">
+              <div class="hotel-image turkiye"></div>
+              <div class="hotel-content">
+                <h3>Turqi</h3>
+                <p>Antalya, Side, Belek dhe Bodrum me hotele 3★, 4★ dhe all-inclusive.</p>
+                <ul>
+                  <li>3★: €35–€70 / natë</li>
+                  <li>4★: €70–€120 / natë</li>
+                  <li>All Inclusive: €90–€180 / natë</li>
+                </ul>
+              </div>
+            </article>
+            <article class="hotel-card">
+              <div class="hotel-image greece"></div>
+              <div class="hotel-content">
+                <h3>Greqi</h3>
+                <p>Korfu, Rodos, Heraklion dhe Santorini me hotele bregdetare dhe family-friendly.</p>
+                <ul>
+                  <li>3★: €40–€80 / natë</li>
+                  <li>4★: €80–€150 / natë</li>
+                  <li>Sea View: €120–€240 / natë</li>
+                </ul>
+              </div>
+            </article>
+            <article class="hotel-card">
+              <div class="hotel-image croatia"></div>
+              <div class="hotel-content">
+                <h3>Kroaci</h3>
+                <p>Split, Dubrovnik, Zadar dhe Istra me hotele moderne dhe boutique.</p>
+                <ul>
+                  <li>3★: €45–€90 / natë</li>
+                  <li>4★: €90–€180 / natë</li>
+                  <li>Beachfront: €150–€300 / natë</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="section results-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Më e mira për ju</p>
+            <h2>Oferta të tjera interesante</h2>
+          </div>
+
+          <div class="results-toolbar">
+            <h3>322 oferta</h3>
+            <div class="sort-row">
+              <span class="sort-pill active">Më i lirë</span>
+              <span class="sort-pill">Më i shpejtë</span>
+              <span class="sort-pill">Më të njohur</span>
+            </div>
+          </div>
+
+          <div class="search-results-layout">
+            <aside class="filter-panel">
+              <h3>Filtrat</h3>
+              <div class="filter-group">
+                <label>Çmim max</label>
+                <input type="range" min="0" max="500" value="250" />
+              </div>
+              <div class="filter-group">
+                <label>Qëllim</label>
+                <select>
+                  <option>Turqi</option>
+                  <option>Greqi</option>
+                  <option>Kroaci</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label>Vlerësim</label>
+                <div class="check-row"><input type="checkbox" checked /> 4.5+</div>
+                <div class="check-row"><input type="checkbox" checked /> 4.8+</div>
+              </div>
+            </aside>
+
+            <div class="result-grid" id="result-grid">
+              <article class="result-card" data-price="179" data-rating="4.8">
+                <div class="result-photo turkiye"></div>
+                <div class="result-body">
+                  <div class="result-meta">
+                    <span>Turqi</span>
+                    <span>4.8 ★</span>
+                  </div>
+                  <h3>Antalya</h3>
+                  <p>3 netë • hotel 4★ • transfer</p>
+                  <div class="result-footer">
+                    <div class="result-price">€179 <small>/ person</small></div>
+                    <a href="turkey-hotels.html">Shiko</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="result-card" data-price="210" data-rating="4.7">
+                <div class="result-photo greece"></div>
+                <div class="result-body">
+                  <div class="result-meta">
+                    <span>Greqi</span>
+                    <span>4.7 ★</span>
+                  </div>
+                  <h3>Korfu</h3>
+                  <p>4 netë • beach resort • breakfast</p>
+                  <div class="result-footer">
+                    <div class="result-price">€210 <small>/ person</small></div>
+                    <a href="greece-hotels.html">Shiko</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="result-card" data-price="245" data-rating="4.9">
+                <div class="result-photo croatia"></div>
+                <div class="result-body">
+                  <div class="result-meta">
+                    <span>Kroaci</span>
+                    <span>4.9 ★</span>
+                  </div>
+                  <h3>Split</h3>
+                  <p>5 netë • coastal hotel • parking</p>
+                  <div class="result-footer">
+                    <div class="result-price">€245 <small>/ person</small></div>
+                    <a href="croatia-hotels.html">Shiko</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="result-card" data-price="260" data-rating="4.6">
+                <div class="result-photo turkiye"></div>
+                <div class="result-body">
+                  <div class="result-meta">
+                    <span>Turqi</span>
+                    <span>4.6 ★</span>
+                  </div>
+                  <h3>Bodrum</h3>
+                  <p>4 netë • boutique hotel • sea view</p>
+                  <div class="result-footer">
+                    <div class="result-price">€260 <small>/ person</small></div>
+                    <a href="turkey-hotels.html">Shiko</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="result-card" data-price="195" data-rating="4.8">
+                <div class="result-photo greece"></div>
+                <div class="result-body">
+                  <div class="result-meta">
+                    <span>Greqi</span>
+                    <span>4.8 ★</span>
+                  </div>
+                  <h3>Rodos</h3>
+                  <p>3 netë • all-inclusive • family</p>
+                  <div class="result-footer">
+                    <div class="result-price">€195 <small>/ person</small></div>
+                    <a href="greece-hotels.html">Shiko</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="result-card" data-price="299" data-rating="5.0">
+                <div class="result-photo croatia"></div>
+                <div class="result-body">
+                  <div class="result-meta">
+                    <span>Kroaci</span>
+                    <span>5.0 ★</span>
+                  </div>
+                  <h3>Dubrovnik</h3>
+                  <p>2 netë • lakship • city center</p>
+                  <div class="result-footer">
+                    <div class="result-price">€299 <small>/ person</small></div>
+                    <a href="croatia-hotels.html">Shiko</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section results-intro">
+        <div class="container">
+          <div class="mini-destinations">
+            <span class="chip active">Antalya</span>
+            <span class="chip">Corfu</span>
+            <span class="chip">Split</span>
+            <span class="chip">Bodrum</span>
+            <span class="chip">Rodos</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">✈</span>
+            <span>SkyWay Travel</span>
+          </div>
+          <p>Agjenci turistike me udhëtime të shpejta, të sigurta dhe me oferta të përshtatura.</p>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li>📍 Rr. Adem Jashari 12, Prishtinë</li>
+            <li>📞 +383 49 123 456</li>
+            <li>✉ info@skywaytravel.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Orari</h4>
+          <ul>
+            <li>E Hënë – E Premte: 08:00 – 18:00</li>
+            <li>E Shtunë: 09:00 – 15:00</li>
+            <li>E Dielë: Mbështetje online</li>
+          </ul>
+        </div>
+        <div class="booking-form-wrap">
+          <h4>Rezervo tani</h4>
+          <form class="contact-form" id="lead-form">
+            <input type="text" placeholder="Emri" required />
+            <input type="email" placeholder="Email" required />
+            <input type="tel" placeholder="Telefoni" required />
+            <textarea rows="3" placeholder="Mesazhi"></textarea>
+            <button type="submit" class="btn btn-primary full-width">Dërgo kërkesë</button>
+          </form>
+        </div>
+      </div>
+      <div class="bottom-bar">© 2026 SkyWay Travel. Të gjitha të drejtat të rezervuara.</div>
+    </footer>
+
+    <div class="whatsapp-cta">
+      <a href="https://wa.me/38349123456" target="_blank" class="whatsapp-button">
+        <img src="whatsapp-icon.svg" alt="WhatsApp" />
+        Na kontaktoni në WhatsApp
+      </a>
+    </div>
+    <a class="whatsapp-float" href="https://wa.me/38349123456" target="_blank" aria-label="Contact via WhatsApp">💬</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

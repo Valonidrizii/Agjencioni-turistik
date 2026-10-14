@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezervimi | SkyWay Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">✈</span>
+          <span>SkyWay Travel</span>
+        </div>
+        <nav class="menu" aria-label="Menu kryesor">
+          <a href="index.html">Ballina</a>
+          <a href="flights.html">Fluturime</a>
+          <a href="turkey-hotels.html">Turqi</a>
+          <a href="greece-hotels.html">Greqi</a>
+          <a href="croatia-hotels.html">Kroaci</a>
+        </nav>
+        <a class="btn btn-primary nav-cta" href="index.html">Kthehu</a>
+      </div>
+    </header>
+
+    <main class="page-main booking-page-main">
+      <section class="section page-hero booking-hero-new">
+        <div class="container narrow">
+          <p class="eyebrow">Rezervim i shpejtë</p>
+          <h1>Planifiko udhëtimin tuaj në Turqi, Greqi dhe Kroaci</h1>
+          <p class="subtitle">Zgjidh paketën, vendos datat dhe lejo ekipit tonë të menaxhojë gjithë rezervimin për ju.</p>
+          <div class="hero-highlights">
+            <div><span>✓</span> Çmimi i qartë</div>
+            <div><span>✓</span> Support 24/7</div>
+            <div><span>✓</span> Konfirmim i shpejtë</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section booking-section">
+        <div class="container">
+          <div class="booking-layout">
+            <div class="booking-form-card">
+              <div class="card-top">
+                <div>
+                  <p class="eyebrow small">Rezervimi juaj</p>
+                  <h2>Forma për rezervim</h2>
+                </div>
+                <span class="secure-badge">🔒 100% e sigurt</span>
+              </div>
+
+              <form class="booking-form" id="booking-form">
+                <div class="form-row two-col">
+                  <label class="field">
+                    <span>Emri dhe mbiemri</span>
+                    <input type="text" name="fullName" placeholder="Shkruaj emrin e plotë" required />
+                  </label>
+                  <label class="field">
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="email@shembull.com" required />
+                  </label>
+                </div>
+
+                <div class="form-row two-col">
+                  <label class="field">
+                    <span>Telefoni</span>
+                    <input type="tel" name="phone" placeholder="+383 49 123 456" required />
+                  </label>
+                  <label class="field">
+                    <span>Lloji i rezervimit</span>
+                    <select name="bookingType" required>
+                      <option value="">Zgjidh</option>
+                      <option value="Fluturim">Fluturim</option>
+                      <option value="Hotel">Hotel</option>
+                      <option value="Paketë complete">Paketë complete</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="form-row two-col">
+                  <label class="field">
+                    <span>Destinacioni</span>
+                    <input type="text" name="destination" placeholder="Antalya, Korfu, Split..." required />
+                  </label>
+                  <label class="field">
+                    <span>Hotel / Aeroport</span>
+                    <input type="text" name="hotel" placeholder="Hotel / aeroport" required />
+                  </label>
+                </div>
+
+                <div class="form-row two-col">
+                  <label class="field">
+                    <span>Data e nisjes</span>
+                    <input type="date" name="departureDate" />
+                  </label>
+                  <label class="field">
+                    <span>Data e kthimit</span>
+                    <input type="date" name="returnDate" />
+                  </label>
+                </div>
+
+                <div class="form-row two-col">
+                  <label class="field">
+                    <span>Personat</span>
+                    <input type="number" name="guests" min="1" value="2" />
+                  </label>
+                  <label class="field">
+                    <span>Tipi i dhomës</span>
+                    <select name="roomType">
+                      <option value="">Zgjidh</option>
+                      <option value="Single">Single</option>
+                      <option value="Double">Double</option>
+                      <option value="Family">Family</option>
+                      <option value="Suite">Suite</option>
+                    </select>
+                  </label>
+                </div>
+
+                <label class="field">
+                  <span>Shënime</span>
+                  <textarea name="notes" rows="4" placeholder="Shkruaj kërkesat ose preferencat tuaja..."></textarea>
+                </label>
+
+                <button type="submit" class="btn btn-primary full-width">Dërgo rezervimin</button>
+              </form>
+            </div>
+
+            <aside class="booking-summary-card">
+              <div class="summary-image"></div>
+              <div class="summary-body">
+                <p class="eyebrow small">Oferta e javës</p>
+                <h3>Mediterian Escape</h3>
+                <div class="summary-route">
+                  <span>Prishtinë</span>
+                  <span>→</span>
+                  <span>Antalya</span>
+                </div>
+
+                <ul class="summary-features">
+                  <li>Fluturim direkt</li>
+                  <li>Hotel 4★ me mëngjes</li>
+                  <li>Transfer aeroporti</li>
+                  <li>Mbështetje 24/7</li>
+                </ul>
+
+                <div class="pricing-box">
+                  <div>
+                    <small>Prej</small>
+                    <strong>€289</strong>
+                  </div>
+                  <span>për person</span>
+                </div>
+
+                <div class="summary-meta">
+                  <span>⭐ 4.8 vlerësim</span>
+                  <span>✅ 320+ klientë</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">✈</span>
+            <span>SkyWay Travel</span>
+          </div>
+          <p>Rezervime të sigurta dhe të personalizuara për Turqi, Greqi dhe Kroaci.</p>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li>📍 Prishtinë</li>
+            <li>📞 +383 49 123 456</li>
+            <li>✉ info@skywaytravel.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Orari</h4>
+          <ul>
+            <li>E Hënë – E Premte: 08:00 – 18:00</li>
+            <li>E Shtunë: 09:00 – 15:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">© 2026 SkyWay Travel</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

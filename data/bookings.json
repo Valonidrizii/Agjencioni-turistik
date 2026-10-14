@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1791987748122,
+    "fullName": "Test User",
+    "email": "test@test.com",
+    "phone": "+38349123456",
+    "bookingType": "Hotel",
+    "destination": "Antalya",
+    "hotel": "Hotel Test",
+    "departureDate": "2026-10-20",
+    "guests": "2",
+    "notes": "Demo booking",
+    "createdAt": "2026-10-14T14:22:28.122Z"
+  },
+  {
+    "id": 1791988605733,
+    "paymentMethod": "Kartë bankare",
+    "status": "Për pritje",
+    "createdAt": "2026-10-14T14:36:45.733Z"
+  }
+]

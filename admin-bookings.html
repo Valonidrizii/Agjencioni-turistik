@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Rezervimet | SkyWay Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">✈</span>
+          <span>SkyWay Travel</span>
+        </div>
+        <nav class="menu" aria-label="Menu kryesor">
+          <a href="index.html">Ballina</a>
+          <a href="flights.html">Fluturime</a>
+          <a href="turkey-hotels.html">Turqi</a>
+          <a href="greece-hotels.html">Greqi</a>
+          <a href="croatia-hotels.html">Kroaci</a>
+          <a href="booking.html">Rezervim</a>
+        </nav>
+        <a class="btn btn-primary nav-cta" href="booking.html">Rezervim</a>
+      </div>
+    </header>
+
+    <main class="page-main admin-page">
+      <section class="section admin-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Admin</p>
+          <h1>Rezervimet e regjistruara</h1>
+          <p class="subtitle">Lista e rezervimeve të dërguara nga forma e rezervimit.</p>
+          <button class="btn btn-secondary" id="clear-bookings" type="button">Pastro rezervimet</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Emri</th>
+                  <th>Destinacioni</th>
+                  <th>Hotel / Aeroport</th>
+                  <th>Lloji</th>
+                  <th>Personat</th>
+                  <th>Data</th>
+                  <th>Telefoni</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody id="bookings-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">✈</span>
+            <span>SkyWay Travel</span>
+          </div>
+          <p>Rezervime të sigurta dhe të personalizuara për Turqi, Greqi dhe Kroaci.</p>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li>📍 Prishtinë</li>
+            <li>📞 +383 49 123 456</li>
+            <li>✉ info@skywaytravel.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Orari</h4>
+          <ul>
+            <li>E Hënë – E Premte: 08:00 – 18:00</li>
+            <li>E Shtunë: 09:00 – 15:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">© 2026 SkyWay Travel</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

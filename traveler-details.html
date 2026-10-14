@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Të dhënat e udhëtarit | SkyWay Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">✈</span>
+          <span>SkyWay Travel</span>
+        </div>
+        <nav class="menu" aria-label="Menu kryesor">
+          <a href="index.html">Ballina</a>
+          <a href="flights.html">Fluturime</a>
+          <a href="turkey-hotels.html">Turqi</a>
+          <a href="greece-hotels.html">Greqi</a>
+          <a href="croatia-hotels.html">Kroaci</a>
+        </nav>
+        <a class="btn btn-primary nav-cta" href="booking.html">Kthehu</a>
+      </div>
+    </header>
+
+    <main class="page-main traveler-page-main">
+      <section class="section page-hero traveler-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Të dhënat e udhëtarit</p>
+          <h1>Plotësoni të dhënat e pasaportës dhe kontaktit</h1>
+          <p class="subtitle">Këto të dhëna përdoren për të siguruar konfirmimin e rezervimit dhe përgatitjen e dokumenteve të udhëtimit.</p>
+        </div>
+      </section>
+
+      <section class="section traveler-section">
+        <div class="container traveler-layout">
+          <div class="traveler-form-card">
+            <div class="card-top">
+              <div>
+                <p class="eyebrow small">Informacioni personal</p>
+                <h2>Detajet e udhëtarit</h2>
+              </div>
+              <span class="secure-badge">🔒 Të dhënat janë të sigurta</span>
+            </div>
+
+            <form class="traveler-form" id="traveler-form">
+              <div class="form-row two-col">
+                <label class="field">
+                  <span>Emri</span>
+                  <input type="text" name="firstName" placeholder="Emri" required />
+                </label>
+                <label class="field">
+                  <span>Mbiemri</span>
+                  <input type="text" name="lastName" placeholder="Mbiemri" required />
+                </label>
+              </div>
+
+              <div class="form-row two-col">
+                <label class="field">
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="email@shembull.com" required />
+                </label>
+                <label class="field">
+                  <span>Telefoni</span>
+                  <input type="tel" name="phone" placeholder="+383 49 123 456" required />
+                </label>
+              </div>
+
+              <div class="form-row two-col">
+                <label class="field">
+                  <span>Numri i pasaportës</span>
+                  <input type="text" name="passportNumber" placeholder="P1234567" required />
+                </label>
+                <label class="field">
+                  <span>Vendi i lëshimit</span>
+                  <input type="text" name="passportIssueCountry" placeholder="Kosova, Shqipëri, ..." required />
+                </label>
+              </div>
+
+              <div class="form-row two-col">
+                <label class="field">
+                  <span>Data e lëshimit</span>
+                  <input type="date" name="passportIssueDate" />
+                </label>
+                <label class="field">
+                  <span>Data e skadimit</span>
+                  <input type="date" name="passportExpiry" required />
+                </label>
+              </div>
+
+              <div class="form-row two-col">
+                <label class="field">
+                  <span>Kombësia</span>
+                  <input type="text" name="nationality" placeholder="Kombësia" required />
+                </label>
+                <label class="field">
+                  <span>Gjinia</span>
+                  <select name="gender">
+                    <option value="">Zgjidh</option>
+                    <option value="Mashkull">Mashkull</option>
+                    <option value="Femer">Femër</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Shënime shtesë</span>
+                <textarea name="travelerNotes" rows="4" placeholder="Kërkesa speciale, preferenca, dhe çdo informacion që duhen për rezervimin..."></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary full-width">Vazhdo te pagesa</button>
+            </form>
+          </div>
+
+          <aside class="traveler-summary-card">
+            <div class="summary-image"></div>
+            <div class="summary-body">
+              <p class="eyebrow small">Rezervimi i zgjedhur</p>
+              <h3 id="traveler-title">Mediterian Escape</h3>
+              <div class="summary-route">
+                <span>Prishtinë</span>
+                <span>→</span>
+                <span id="traveler-destination">Antalya</span>
+              </div>
+
+              <ul class="summary-features">
+                <li>Vërtetim me pasaportë</li>
+                <li>Shërbim i personalizuar</li>
+                <li>Konfirmim i shpejtë</li>
+                <li>Mbështetje 24/7</li>
+              </ul>
+
+              <div class="pricing-box">
+                <div>
+                  <small>Totali</small>
+                  <strong>€289</strong>
+                </div>
+                <span>për person</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">✈</span>
+            <span>SkyWay Travel</span>
+          </div>
+          <p>Rezervime të sigurta dhe të personalizuara për Turqi, Greqi dhe Kroaci.</p>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li>📍 Prishtinë</li>
+            <li>📞 +383 49 123 456</li>
+            <li>✉ info@skywaytravel.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Orari</h4>
+          <ul>
+            <li>E Hënë – E Premte: 08:00 – 18:00</li>
+            <li>E Shtunë: 09:00 – 15:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">© 2026 SkyWay Travel</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

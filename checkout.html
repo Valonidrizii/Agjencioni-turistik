@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagesa | SkyWay Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">✈</span>
+          <span>SkyWay Travel</span>
+        </div>
+        <nav class="menu" aria-label="Menu kryesor">
+          <a href="index.html">Ballina</a>
+          <a href="flights.html">Fluturime</a>
+          <a href="turkey-hotels.html">Turqi</a>
+          <a href="greece-hotels.html">Greqi</a>
+          <a href="croatia-hotels.html">Kroaci</a>
+        </nav>
+        <a class="btn btn-primary nav-cta" href="booking.html">Kthehu</a>
+      </div>
+    </header>
+
+    <main class="page-main checkout-page">
+      <section class="section page-hero checkout-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Pagesa</p>
+          <h1>Finalizo rezervimin</h1>
+          <p class="subtitle">Zgjidh mënyrën e pagesës dhe kompletojmë rezervimin me konfirmim të menjëhershëm.</p>
+        </div>
+      </section>
+
+      <section class="section checkout-section">
+        <div class="container checkout-layout">
+          <div class="checkout-form-card">
+            <div class="card-top">
+              <div>
+                <p class="eyebrow small">Mënyra e pagesës</p>
+                <h2>Zgjidh mënyrën e pagesës</h2>
+              </div>
+            </div>
+
+            <form class="checkout-form" id="checkout-form">
+              <div class="payment-options">
+                <label class="payment-option active">
+                  <input type="radio" name="paymentMethod" value="Kartë bankare" checked />
+                  <span class="payment-icon">💳</span>
+                  <span>
+                    <strong>Kartë bankare</strong>
+                    <small>Visa, Mastercard, Maestro</small>
+                  </span>
+                </label>
+
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="Transfer bankar" />
+                  <span class="payment-icon">🏦</span>
+                  <span>
+                    <strong>Transfer bankar</strong>
+                    <small>Përmes bankës</small>
+                  </span>
+                </label>
+
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="Me para në zyrë" />
+                  <span class="payment-icon">💵</span>
+                  <span>
+                    <strong>Me para në zyrë</strong>
+                    <small>Pagesa në lokalin tonë</small>
+                  </span>
+                </label>
+              </div>
+
+              <div class="payment-details">
+                <div class="detail-row">
+                  <span>Emri</span>
+                  <strong id="checkout-name">—</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Destinacioni</span>
+                  <strong id="checkout-destination">—</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Hotel / Aeroport</span>
+                  <strong id="checkout-hotel">—</strong>
+                </div>
+                <div class="detail-row total-row">
+                  <span>Totali</span>
+                  <strong id="checkout-total">€289</strong>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width">Bëj rezervimin</button>
+            </form>
+          </div>
+
+          <aside class="checkout-summary-card">
+            <div class="summary-image"></div>
+            <div class="summary-body">
+              <p class="eyebrow small">Paketë e zgjedhur</p>
+              <h3 id="summary-title">Mediterian Escape</h3>
+              <div class="summary-route">
+                <span id="route-from">Prishtinë</span>
+                <span>→</span>
+                <span id="route-to">Antalya</span>
+              </div>
+
+              <ul class="summary-features">
+                <li>Fluturim / transfer</li>
+                <li>Hotel me mëngjes</li>
+                <li>Konfirmim i shpejtë</li>
+                <li>Mbështetje në telefon</li>
+              </ul>
+
+              <div class="pricing-box">
+                <div>
+                  <small>Totali</small>
+                  <strong id="summary-total">€289</strong>
+                </div>
+                <span>për person</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">✈</span>
+            <span>SkyWay Travel</span>
+          </div>
+          <p>Rezervime të sigurta dhe të personalizuara për Turqi, Greqi dhe Kroaci.</p>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li>📍 Prishtinë</li>
+            <li>📞 +383 49 123 456</li>
+            <li>✉ info@skywaytravel.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Orari</h4>
+          <ul>
+            <li>E Hënë – E Premte: 08:00 – 18:00</li>
+            <li>E Shtunë: 09:00 – 15:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">© 2026 SkyWay Travel</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
